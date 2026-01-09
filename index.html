@@ -1,25 +1,28 @@
 
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>古诗欣赏 - 将进酒</title>
+  <title>English Poetry Appreciation</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap');
     body {
-      font-family: 'Noto Serif SC', serif;
+      font-family: 'Roboto', sans-serif;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       min-height: 100vh;
     }
-    .poem-character {
+    .poem-title {
+      font-family: 'Playfair Display', serif;
+    }
+    .poem-line {
       transition: all 0.3s ease;
       display: inline-block;
     }
-    .poem-character:hover {
-      transform: scale(1.2);
+    .poem-line:hover {
+      transform: scale(1.05);
       color: #fbbf24;
     }
     .fade-in {
@@ -31,114 +34,128 @@
     }
   </style>
 </head>
-<body class="bg-gradient-to-br from-amber-50 to-orange-100">
+<body class="bg-gradient-to-br from-blue-50 to-purple-100">
   <div class="container mx-auto px-4 py-8">
-    <!-- 头部 -->
+    <!-- Header -->
     <header class="text-center mb-12 fade-in">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-        <i class="fas fa-book-open text-amber-600 mr-3"></i>古诗欣赏
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4 poem-title">
+        <i class="fas fa-book-open text-indigo-600 mr-3"></i>English Poetry Appreciation
       </h1>
       <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        品味千年诗词韵味，感受古人豪迈情怀
+        Experience the beauty and emotion of classic English poetry
       </p>
     </header>
 
-    <!-- 主内容区 -->
+    <!-- Main Content -->
     <div class="max-w-4xl mx-auto">
-      <!-- 诗歌卡片 -->
+      <!-- Poem Card -->
       <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 fade-in">
         <div class="flex items-center justify-between mb-6">
           <div>
-            <h2 class="text-3xl font-bold text-gray-800 mb-2">将进酒</h2>
+            <h2 class="text-3xl font-bold text-gray-800 mb-2 poem-title">The Road Not Taken</h2>
             <p class="text-gray-600 flex items-center">
-              <i class="fas fa-user text-amber-500 mr-2"></i>李白
+              <i class="fas fa-user text-indigo-500 mr-2"></i>Robert Frost
               <span class="mx-2">•</span>
-              <i class="fas fa-calendar-alt text-amber-500 mr-2"></i>唐代
+              <i class="fas fa-calendar-alt text-indigo-500 mr-2"></i>1916
             </p>
           </div>
-          <div class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
-            <i class="fas fa-tag mr-1"></i>豪放诗
+          <div class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium">
+            <i class="fas fa-tag mr-1"></i>Narrative Poetry
           </div>
         </div>
 
-        <!-- 诗歌内容 -->
+        <!-- Poem Content -->
         <div class="mb-8">
-          <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-6 mb-6">
+          <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-6 mb-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-              <i class="fas fa-feather-alt text-amber-600 mr-2"></i>诗歌原文
+              <i class="fas fa-feather-alt text-indigo-600 mr-2"></i>Poem Text
             </h3>
             <div class="text-center">
-              <p class="text-2xl leading-loose mb-4 poem-line">君不见黄河之水天上来，奔流到海不复回。</p>
-              <p class="text-2xl leading-loose mb-4 poem-line">君不见高堂明镜悲白发，朝如青丝暮成雪。</p>
-              <p class="text-2xl leading-loose mb-4 poem-line">人生得意须尽欢，莫使金樽空对月。</p>
-              <p class="text-2xl leading-loose mb-4 poem-line">天生我材必有用，千金散尽还复来。</p>
-              <p class="text-2xl leading-loose mb-4 poem-line">烹羊宰牛且为乐，会须一饮三百杯。</p>
-              <p class="text-2xl leading-loose mb-4 poem-line">岑夫子，丹丘生，将进酒，杯莫停。</p>
-              <p class="text-2xl leading-loose mb-4 poem-line">与君歌一曲，请君为我倾耳听。</p>
-              <p class="text-2xl leading-loose mb-4 poem-line">钟鼓馔玉不足贵，但愿长醉不复醒。</p>
-              <p class="text-2xl leading-loose mb-4 poem-line">古来圣贤皆寂寞，惟有饮者留其名。</p>
-              <p class="text-2xl leading-loose mb-4 poem-line">陈王昔时宴平乐，斗酒十千恣欢谑。</p>
-              <p class="text-2xl leading-loose mb-4 poem-line">主人何为言少钱，径须沽取对君酌。</p>
-              <p class="text-2xl leading-loose mb-4 poem-line">五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">Two roads diverged in a yellow wood,</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">And sorry I could not travel both</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">And be one traveler, long I stood</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">And looked down one as far as I could</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">To where it bent in the undergrowth;</p>
+              <p class="text-2xl leading-loose mb-4 poem-line"></p>
+              <p class="text-2xl leading-loose mb-4 poem-line">Then took the other, as just as fair,</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">And having perhaps the better claim,</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">Because it was grassy and wanted wear;</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">Though as for that the passing there</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">Had worn them really about the same,</p>
+              <p class="text-2xl leading-loose mb-4 poem-line"></p>
+              <p class="text-2xl leading-loose mb-4 poem-line">And both that morning equally lay</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">In leaves no step had trodden black.</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">Oh, I kept the first for another day!</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">Yet knowing how way leads on to way,</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">I doubted if I should ever come back.</p>
+              <p class="text-2xl leading-loose mb-4 poem-line"></p>
+              <p class="text-2xl leading-loose mb-4 poem-line">I shall be telling this with a sigh</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">Somewhere ages and ages hence:</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">Two roads diverged in a wood, and I—</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">I took the one less traveled by,</p>
+              <p class="text-2xl leading-loose mb-4 poem-line">And that has made all the difference.</p>
             </div>
           </div>
 
-          <!-- 诗歌赏析 -->
-          <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-6">
+          <!-- Poem Analysis -->
+          <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-              <i class="fas fa-comment-dots text-indigo-600 mr-2"></i>诗歌赏析
+              <i class="fas fa-comment-dots text-amber-600 mr-2"></i>Poem Analysis
             </h3>
             <p class="text-gray-700 leading-relaxed text-lg">
-              《将进酒》是唐代大诗人李白沿用乐府古题创作的一首诗。此诗思想内容非常深沉，艺术表现非常成熟，
-              在同题作品中影响最大。诗人豪饮高歌，借酒消愁，抒发了忧愤深广的人生感慨。
-              诗中交织着失望与自信、悲愤与抗争的情怀，体现出强烈的豪纵狂放的个性。
-              全诗气势豪迈，感情奔放，语言流畅自然，具有很强的感染力。
+              "The Road Not Taken" is one of Robert Frost's most beloved and widely studied poems. 
+              Published in 1916, this narrative poem explores the theme of choices and their consequences. 
+              The speaker describes a moment in a yellow wood where two roads diverge, and he must choose 
+              which path to take. The poem is often interpreted as an celebration of individualism and 
+              nonconformity, though Frost himself suggested it was more about regret and self-deception. 
+              The famous final lines suggest that the speaker will look back on this moment as life-changing, 
+              though the poem's tone is more ambiguous than often assumed.
             </p>
           </div>
         </div>
 
-        <!-- 互动功能 -->
+        <!-- Interactive Features -->
         <div class="flex flex-wrap gap-4 justify-center">
-          <button class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-full flex items-center transition-all duration-300 transform hover:scale-105">
-            <i class="fas fa-heart mr-2"></i>收藏诗歌
+          <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full flex items-center transition-all duration-300 transform hover:scale-105">
+            <i class="fas fa-heart mr-2"></i>Favorite Poem
           </button>
-          <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-full flex items-center transition-all duration-300 transform hover:scale-105">
-            <i class="fas fa-share-alt mr-2"></i>分享故事
+          <button class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full flex items-center transition-all duration-300 transform hover:scale-105">
+            <i class="fas fa-share-alt mr-2"></i>Share Analysis
           </button>
           <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full flex items-center transition-all duration-300 transform hover:scale-105">
-            <i class="fas fa-music mr-2"></i>诗歌朗诵
+            <i class="fas fa-music mr-2"></i>Poem Reading
           </button>
         </div>
       </div>
 
-      <!-- 相关推荐 -->
+      <!-- Related Recommendations -->
       <div class="bg-white rounded-2xl shadow-xl p-8 fade-in">
-        <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-          <i class="fas fa-star text-yellow-500 mr-2"></i>相关推荐
+        <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center poem-title">
+          <i class="fas fa-star text-yellow-500 mr-2"></i>Related Poems
         </h3>
         <div class="grid md:grid-cols-2 gap-6">
           <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
-            <h4 class="text-xl font-semibold text-gray-800 mb-2">蜀道难</h4>
-            <p class="text-gray-600 mb-4">蜀道之难，难于上青天！</p>
-            <span class="text-amber-600 text-sm font-medium">李白 · 唐代</span>
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">Stopping by Woods on a Snowy Evening</h4>
+            <p class="text-gray-600 mb-4">Whose woods these are I think I know...</p>
+            <span class="text-indigo-600 text-sm font-medium">Robert Frost · 1923</span>
           </div>
           <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
-            <h4 class="text-xl font-semibold text-gray-800 mb-2">春江花月夜</h4>
-            <p class="text-gray-600 mb-4">春江潮水连海平，海上明月共潮生。</p>
-            <span class="text-amber-600 text-sm font-medium">张若虚 · 唐代</span>
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">The Raven</h4>
+            <p class="text-gray-600 mb-4">Once upon a midnight dreary, while I pondered, weak and weary...</p>
+            <span class="text-indigo-600 text-sm font-medium">Edgar Allan Poe · 1845</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 页脚 -->
+    <!-- Footer -->
     <footer class="text-center mt-16 text-gray-600">
-      <p>© 2026 古诗欣赏平台 · 传承中华文化</p>
+      <p>© 2026 Poetry Appreciation Platform · Celebrating Literary Heritage</p>
     </footer>
   </div>
 
   <script>
-    // 诗歌动画效果
+    // Poem animation effect
     document.addEventListener('DOMContentLoaded', function() {
       const poemLines = document.querySelectorAll('.poem-line');
       poemLines.forEach((line, index) => {
@@ -148,22 +165,22 @@
           line.style.transition = 'all 0.8s ease';
           line.style.opacity = '1';
           line.style.transform = 'translateY(0)';
-        }, index * 200);
+        }, index * 150);
       });
 
-      // 收藏功能
+      // Favorite feature
       const favoriteBtn = document.querySelector('.fa-heart').closest('button');
       favoriteBtn.addEventListener('click', function() {
         const icon = this.querySelector('.fa-heart');
         if (icon.classList.contains('far')) {
           icon.classList.replace('far', 'fas');
-          this.classList.replace('bg-amber-600', 'bg-pink-600');
-          this.classList.replace('hover:bg-amber-700', 'hover:bg-pink-700');
-          alert('已收藏《将进酒》！');
+          this.classList.replace('bg-indigo-600', 'bg-pink-600');
+          this.classList.replace('hover:bg-indigo-700', 'hover:bg-pink-700');
+          alert('Added "The Road Not Taken" to favorites!');
         } else {
           icon.classList.replace('fas', 'far');
-          this.classList.replace('bg-pink-600', 'bg-amber-600');
-          this.classList.replace('hover:bg-pink-700', 'hover:bg-amber-700');
+          this.classList.replace('bg-pink-600', 'bg-indigo-600');
+          this.classList.replace('hover:bg-pink-700', 'hover:bg-indigo-700');
         }
       });
     });
